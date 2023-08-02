@@ -1,13 +1,3 @@
 // since there's no dynamic data here, we can prerender
 // it so that it gets served as a static asset in production
 export const prerender = true;
-
-import axios from 'axios';
-
-export const load = async () => {
-	const response = await axios.get(
-		`https://newsapi.org/v2/everything?q=tesla&apiKey=41fe10ca82d24eb88fe16ff10a8307c0`
-	);
-
-	return response.data;
-};

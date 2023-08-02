@@ -15,7 +15,7 @@
 				<img src={article.urlToImage} alt="img" class="news-poster" />
 				<h3>{article.title}</h3>
 				<p>{article.description}</p>
-				<button>Read more</button>
+				<a href={`/news/${id + 1}`}>Read more</a>
 			</div>
 		{/each}
 	</div>
